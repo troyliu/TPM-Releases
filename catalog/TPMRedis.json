@@ -1,0 +1,20 @@
+{
+  "product": "TPMRedis",
+  "version": "1.0.1",
+  "tagName": "TPMRedis-v1.0.1",
+  "url": "https://github.com/troyliu/TPM-Releases/releases/tag/TPMRedis-v1.0.1",
+  "assets": [
+    {
+      "name": "checksums.txt",
+      "url": "https://github.com/troyliu/TPM-Releases/releases/download/TPMRedis-v1.0.1/checksums.txt",
+      "size": 86,
+      "digest": "sha256:57c2e92d0e156d5d43cd0c634b9cc487c679906d52338d34969a69b7cb0ae76f"
+    },
+    {
+      "name": "tpmredis-1.0.1.vsix",
+      "url": "https://github.com/troyliu/TPM-Releases/releases/download/TPMRedis-v1.0.1/tpmredis-1.0.1.vsix",
+      "size": 284292,
+      "digest": "sha256:dc8bd83b3e81baba85dbf755acac7834e434be69dab822f6a8388c2b40148a58"
+    }
+  ]
+}

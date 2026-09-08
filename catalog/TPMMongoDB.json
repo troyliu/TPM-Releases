@@ -1,0 +1,20 @@
+{
+  "product": "TPMMongoDB",
+  "version": "0.1.1",
+  "tagName": "TPMMongoDB-v0.1.1",
+  "url": "https://github.com/troyliu/TPM-Releases/releases/tag/TPMMongoDB-v0.1.1",
+  "assets": [
+    {
+      "name": "checksums.txt",
+      "url": "https://github.com/troyliu/TPM-Releases/releases/download/TPMMongoDB-v0.1.1/checksums.txt",
+      "size": 88,
+      "digest": "sha256:37c24fd6290016f2856326acddc58c7eef5e9776ae05316b128ada4f60450f12"
+    },
+    {
+      "name": "tpmmongodb-0.1.1.vsix",
+      "url": "https://github.com/troyliu/TPM-Releases/releases/download/TPMMongoDB-v0.1.1/tpmmongodb-0.1.1.vsix",
+      "size": 1500337,
+      "digest": "sha256:c805b1b0df2fb7f169d4b1f57863b49810349985b22179e9261c3319e58802b7"
+    }
+  ]
+}
