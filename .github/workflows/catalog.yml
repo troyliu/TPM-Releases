@@ -1,0 +1,33 @@
+name: Update download catalog
+on:
+  release:
+    types: [published, edited, deleted]
+  workflow_dispatch:
+permissions:
+  contents: write
+concurrency:
+  group: download-catalog
+  cancel-in-progress: false
+jobs:
+  catalog:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v7
+        with:
+          ref: main
+      - uses: actions/setup-node@v7
+        with:
+          node-version: '22'
+      - run: node --test scripts/update-catalog.test.mjs
+      - run: node scripts/update-catalog.mjs
+        env:
+          GH_TOKEN: ${{ github.token }}
+      - name: Save download links
+        run: |
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git add README.md catalog tools
+          if ! git diff --cached --quiet; then
+            git commit -m 'docs: refresh tool downloads'
+            git push origin HEAD:main
+          fi
