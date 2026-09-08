@@ -1,26 +1,26 @@
 {
   "product": "TPMAzureAssistCLI",
-  "version": "0.3.5",
-  "tagName": "TPMAzureAssistCLI-v0.3.5",
-  "url": "https://github.com/troyliu/TPM-Releases/releases/tag/TPMAzureAssistCLI-v0.3.5",
+  "version": "0.3.6",
+  "tagName": "TPMAzureAssistCLI-v0.3.6",
+  "url": "https://github.com/troyliu/TPM-Releases/releases/tag/TPMAzureAssistCLI-v0.3.6",
   "assets": [
     {
       "name": "checksums.txt",
-      "url": "https://github.com/troyliu/TPM-Releases/releases/download/TPMAzureAssistCLI-v0.3.5/checksums.txt",
+      "url": "https://github.com/troyliu/TPM-Releases/releases/download/TPMAzureAssistCLI-v0.3.6/checksums.txt",
       "size": 182,
-      "digest": "sha256:620fbf8465698a9ea4965bd416d406da8a3236a5442f6a7527f46cf3dda73db9"
+      "digest": "sha256:b33ddcb3db76e3ec8717756d8d0197c1d9c97b1ac90223dd4e85dfcd38778568"
     },
     {
       "name": "manifest.json",
-      "url": "https://github.com/troyliu/TPM-Releases/releases/download/TPMAzureAssistCLI-v0.3.5/manifest.json",
-      "size": 6158,
-      "digest": "sha256:bcb267e068e6e7508ff7539715c13cd2d9570b6caf6f9ace056e998d694c207d"
+      "url": "https://github.com/troyliu/TPM-Releases/releases/download/TPMAzureAssistCLI-v0.3.6/manifest.json",
+      "size": 6255,
+      "digest": "sha256:46809fac03e4f0dbea599c9615b0ca588c80201006b3ff12882e597ada46cf21"
     },
     {
-      "name": "tpm-azure-assist-macos-arm64-v0.3.5",
-      "url": "https://github.com/troyliu/TPM-Releases/releases/download/TPMAzureAssistCLI-v0.3.5/tpm-azure-assist-macos-arm64-v0.3.5",
-      "size": 930851,
-      "digest": "sha256:bc72d3544c3d2dcd0bd6a3af75adaa3f9905cc38f3b84442176f49821f166994"
+      "name": "tpm-azure-assist-macos-arm64-v0.3.6",
+      "url": "https://github.com/troyliu/TPM-Releases/releases/download/TPMAzureAssistCLI-v0.3.6/tpm-azure-assist-macos-arm64-v0.3.6",
+      "size": 918817,
+      "digest": "sha256:e4ab8a5a0c19ffbfd9a45e9723f9b0a14b2c36df5aa22bdce90778d3167a878b"
     }
   ]
 }
