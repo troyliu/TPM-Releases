@@ -4,7 +4,7 @@ TPM 工具的公開下載入口。原始碼專案保持私有；此 repo 只保�
 
 | 工具 | 用途 | 系統需求 | 最新穩定版 |
 | --- | --- | --- | --- |
-| [TPMSmokeTest](tools/TPMSmokeTest.md) | 官網與據點叫車自動化測試工具 | macOS、VS Code 1.96+ | [0.0.1](https://github.com/troyliu/TPM-Releases/releases/tag/TPMSmokeTest-v0.0.1) · [下載](https://github.com/troyliu/TPM-Releases/releases/download/TPMSmokeTest-v0.0.1/tpm-smoke-test-0.0.1.vsix) |
+| [TPMSmokeTest](tools/TPMSmokeTest.md) | 官網與據點叫車自動化測試工具 | macOS、VS Code 1.96+ | [0.0.2](https://github.com/troyliu/TPM-Releases/releases/tag/TPMSmokeTest-v0.0.2) · [下載](https://github.com/troyliu/TPM-Releases/releases/download/TPMSmokeTest-v0.0.2/tpm-smoke-test-0.0.2.vsix) |
 | [TPMAzureAssist](tools/TPMAzureAssist.md) | Azure DevOps 工作項目與報表工具 | VS Code 1.75+ | [1.3.4](https://github.com/troyliu/TPM-Releases/releases/tag/TPMAzureAssist-v1.3.4) · [下載](https://github.com/troyliu/TPM-Releases/releases/download/TPMAzureAssist-v1.3.4/tpm-azure-assist-1.3.4.vsix) |
 | [TPMMongoDB](tools/TPMMongoDB.md) | MongoDB 連線與文件查詢工具 | VS Code 1.95+ | [0.1.1](https://github.com/troyliu/TPM-Releases/releases/tag/TPMMongoDB-v0.1.1) · [下載](https://github.com/troyliu/TPM-Releases/releases/download/TPMMongoDB-v0.1.1/tpmmongodb-0.1.1.vsix) |
 | [TPMRedis](tools/TPMRedis.md) | Redis 連線與資料瀏覽工具 | VS Code 1.95+ | [1.0.1](https://github.com/troyliu/TPM-Releases/releases/tag/TPMRedis-v1.0.1) · [下載](https://github.com/troyliu/TPM-Releases/releases/download/TPMRedis-v1.0.1/tpmredis-1.0.1.vsix) |
