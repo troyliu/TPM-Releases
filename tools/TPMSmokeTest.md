@@ -2,7 +2,7 @@
 
 官網與據點叫車自動化測試工具。需求：macOS、VS Code 1.96+。
 
-最新版：[0.0.3](https://github.com/troyliu/TPM-Releases/releases/tag/TPMSmokeTest-v0.0.3) · [下載 tpm-smoke-test-0.0.3.vsix](https://github.com/troyliu/TPM-Releases/releases/download/TPMSmokeTest-v0.0.3/tpm-smoke-test-0.0.3.vsix)
+最新版：[0.0.4](https://github.com/troyliu/TPM-Releases/releases/tag/TPMSmokeTest-v0.0.4) · [下載 tpm-smoke-test-0.0.4.vsix](https://github.com/troyliu/TPM-Releases/releases/download/TPMSmokeTest-v0.0.4/tpm-smoke-test-0.0.4.vsix)
 
 在 VS Code 命令面板執行 `Extensions: Install from VSIX...`，選擇下載的檔案。
 
