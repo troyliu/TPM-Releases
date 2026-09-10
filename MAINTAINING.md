@@ -1,6 +1,6 @@
 # 發布維護
 
-四個來源 repo 保持 private。各 repo 推送 `vX.Y.Z` 後執行測試、打包，再發布到本 repo 的 `<專案>-vX.Y.Z` Release。
+來源 repo 保持 private。已設定發布 workflow 的 repo 推送 `vX.Y.Z` 後執行測試、打包，再發布到本 repo 的 `<專案>-vX.Y.Z` Release。
 
 來源 repo 的 Actions 設定：
 
@@ -15,3 +15,5 @@ Release tag 指向本下載 repo 的 main，不會複製來源 repo 的 Git 歷�
 每個來源 workflow 可從 Actions 手動執行並指定既有 tag，用於重新打包或補傳。既有正式 Release 的同名附件不覆蓋，以免下載內容在同版本下改變。失敗的 draft Release 可補傳後再發布。
 
 公開下載頁中的範例與索引不應包含公司成員清單、連線憑證或私人工作項目內容。
+
+TPMSmokeTest 初版透過 `gh` 手動發布：來源 repo 使用 `v0.0.1`，本下載 repo 使用 `TPMSmokeTest-v0.0.1`，兩邊附上相同 VSIX 與 `checksums.txt`。新增工具須同步維護 `scripts/update-catalog.mjs` 的產品設定。

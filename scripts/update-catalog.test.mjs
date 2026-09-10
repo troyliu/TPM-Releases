@@ -18,3 +18,10 @@ test('selects per-product semantic version, ignoring other tools and prereleases
 test('does not advertise incomplete releases', () => {
   assert.equal(selectRelease([release('TPMRedis', '1.0.0', {assets: []})], 'TPMRedis'), undefined);
 });
+
+test('smoke test requires its VSIX and checksums under its own release prefix', () => {
+  const wanted = release('TPMSmokeTest', '0.0.1');
+  assert.equal(products.TPMSmokeTest.asset('0.0.1'), 'tpm-smoke-test-0.0.1.vsix');
+  assert.equal(selectRelease([release('TPMRedis', '99.0.0'), wanted], 'TPMSmokeTest').tag_name, wanted.tag_name);
+  assert.equal(selectRelease([release('TPMSmokeTest', '0.0.1', {assets: [{name:'tpm-smoke-test-0.0.1.vsix',state:'uploaded'}]})], 'TPMSmokeTest'), undefined);
+});

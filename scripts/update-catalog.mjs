@@ -3,6 +3,7 @@ import { execFileSync } from 'node:child_process';
 import { pathToFileURL } from 'node:url';
 
 export const products = {
+  TPMSmokeTest: { kind: 'VSIX', description: '官網與據點叫車自動化測試工具', requirement: 'macOS、VS Code 1.96+', asset: v => `tpm-smoke-test-${v}.vsix` },
   TPMAzureAssist: { kind: 'VSIX', description: 'Azure DevOps 工作項目與報表工具', requirement: 'VS Code 1.75+', asset: v => `tpm-azure-assist-${v}.vsix` },
   TPMMongoDB: { kind: 'VSIX', description: 'MongoDB 連線與文件查詢工具', requirement: 'VS Code 1.95+', asset: v => `tpmmongodb-${v}.vsix` },
   TPMRedis: { kind: 'VSIX', description: 'Redis 連線與資料瀏覽工具', requirement: 'VS Code 1.95+', asset: v => `tpmredis-${v}.vsix` },
@@ -46,7 +47,7 @@ export function updateCatalog(releases) {
     const installation = info.kind === 'VSIX'
       ? '在 VS Code 命令面板執行 `Extensions: Install from VSIX...`，選擇下載的檔案。\n'
       : `CLI 是 Node.js bundle，沒有內含 Node runtime。先安裝 Node.js 26.5.0 以上。\n\n\`\`\`bash\nmkdir -p /tmp/tpm-install ~/.local/bin\ncurl -fL '${asset.url}' -o /tmp/tpm-install/tpm\ncurl -fL '${release.html_url.replace('/tag/', '/download/')}/checksums.txt' -o /tmp/tpm-install/checksums.txt\nexpected=$(awk '$2 == "${asset.name}" {print $1}' /tmp/tpm-install/checksums.txt)\ntest -n "$expected" && printf '%s  %s\\n' "$expected" /tmp/tpm-install/tpm | shasum -a 256 -c - && install -m 755 /tmp/tpm-install/tpm ~/.local/bin/tpm\nexport PATH="$HOME/.local/bin:$PATH"\ntpm --version\n\`\`\`\n\n將上述 PATH 設定加入 shell 啟動設定檔，之後以 \`tpm update\` 更新；公開下載與更新不需要 GitHub 登入。舊版使用者請先依上方指令安裝一次。\n`;
-    fs.writeFileSync(`tools/${product}.md`, `# ${product}\n\n${info.description}。需求：${info.requirement}。\n\n最新版：[${release.version}](${release.html_url}) · [下載 ${asset.name}](${asset.url})\n\n${installation}\n${product === 'TPMAzureAssist' ? '公開版不含團隊成員清單。需要人員報表時，在 VS Code 的 `tpmAzureAssist.membersFilePath` 指定本機 JSON 清單的絕對路徑，格式為 `[{"name":"Example","email":"user@example.com","team":"Example"}]`。\n' : ''}`);
+    fs.writeFileSync(`tools/${product}.md`, `# ${product}\n\n${info.description}。需求：${info.requirement}。\n\n最新版：[${release.version}](${release.html_url}) · [下載 ${asset.name}](${asset.url})\n\n${installation}\n${product === 'TPMSmokeTest' ? '首次使用請在側邊欄按「準備瀏覽器」。Apple Silicon 已實測；Intel Mac 尚待實機驗證。舊版 0.1.0 使用者請先解除安裝，再安裝重新編號的 0.0.1。\n\n' : ''}${product === 'TPMAzureAssist' ? '公開版不含團隊成員清單。需要人員報表時，在 VS Code 的 `tpmAzureAssist.membersFilePath` 指定本機 JSON 清單的絕對路徑，格式為 `[{"name":"Example","email":"user@example.com","team":"Example"}]`。\n' : ''}`);
   }
   fs.writeFileSync('README.md', `# TPM Releases\n\nTPM 工具的公開下載入口。原始碼專案保持私有；此 repo 只保存下載說明、版本索引及發布工具。\n\n| 工具 | 用途 | 系統需求 | 最新穩定版 |\n| --- | --- | --- | --- |\n${rows.join('\n')}\n\n每個工具獨立發版，請使用上表的專屬下載入口。\n\n所有版本附有 \`checksums.txt\`。VSIX 可用 VS Code 的 Install from VSIX 安裝。CLI 的安裝指令見專屬頁面。\n\nRelease 中 GitHub 自動提供的 Source code 壓縮檔是本下載 repo 的內容，不是工具的原始碼。已打包的 JavaScript 仍可被讀取。\n\n[發布維護說明](MAINTAINING.md)\n`);
 }
