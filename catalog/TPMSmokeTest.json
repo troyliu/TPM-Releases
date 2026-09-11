@@ -1,20 +1,20 @@
 {
   "product": "TPMSmokeTest",
-  "version": "0.0.6",
-  "tagName": "TPMSmokeTest-v0.0.6",
-  "url": "https://github.com/troyliu/TPM-Releases/releases/tag/TPMSmokeTest-v0.0.6",
+  "version": "0.0.7",
+  "tagName": "TPMSmokeTest-v0.0.7",
+  "url": "https://github.com/troyliu/TPM-Releases/releases/tag/TPMSmokeTest-v0.0.7",
   "assets": [
     {
       "name": "checksums.txt",
-      "url": "https://github.com/troyliu/TPM-Releases/releases/download/TPMSmokeTest-v0.0.6/checksums.txt",
+      "url": "https://github.com/troyliu/TPM-Releases/releases/download/TPMSmokeTest-v0.0.7/checksums.txt",
       "size": 92,
-      "digest": "sha256:a42e72071a6d1d1045c524837462021afbdff4496a8044bb67e15ead465ce9e1"
+      "digest": "sha256:39ee9860b8baed5c0ebfc17cae78020650042449f45c5ad59b1ef6d94a01d391"
     },
     {
-      "name": "tpm-smoke-test-0.0.6.vsix",
-      "url": "https://github.com/troyliu/TPM-Releases/releases/download/TPMSmokeTest-v0.0.6/tpm-smoke-test-0.0.6.vsix",
-      "size": 22827447,
-      "digest": "sha256:262bd3a9e079a394f40c2a54053997747e428d03da79d71efc7a60e0710c4da8"
+      "name": "tpm-smoke-test-0.0.7.vsix",
+      "url": "https://github.com/troyliu/TPM-Releases/releases/download/TPMSmokeTest-v0.0.7/tpm-smoke-test-0.0.7.vsix",
+      "size": 22848973,
+      "digest": "sha256:46d7754cd41276d62c278839b30aa0b61b4de159412ea9ee1bf02bf5442af5a3"
     }
   ]
 }
