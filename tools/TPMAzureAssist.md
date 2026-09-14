@@ -1,6 +1,6 @@
 # TPMAzureAssist
 
-Azure DevOps 工作項目與報表工具。需求：VS Code 1.75+。
+Azure DevOps 工作項目與報表工具。需求：VS Code 1.95+。
 
 最新版：[1.3.4](https://github.com/troyliu/TPM-Releases/releases/tag/TPMAzureAssist-v1.3.4) · [下載 tpm-azure-assist-1.3.4.vsix](https://github.com/troyliu/TPM-Releases/releases/download/TPMAzureAssist-v1.3.4/tpm-azure-assist-1.3.4.vsix)
 

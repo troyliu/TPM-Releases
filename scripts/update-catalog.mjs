@@ -4,7 +4,7 @@ import { pathToFileURL } from 'node:url';
 
 export const products = {
   TPMSmokeTest: { kind: 'VSIX', description: '官網與據點叫車自動化測試工具', requirement: 'macOS、VS Code 1.96+', asset: v => `tpm-smoke-test-${v}.vsix` },
-  TPMAzureAssist: { kind: 'VSIX', description: 'Azure DevOps 工作項目與報表工具', requirement: 'VS Code 1.75+', asset: v => `tpm-azure-assist-${v}.vsix` },
+  TPMAzureAssist: { kind: 'VSIX', description: 'Azure DevOps 工作項目與報表工具', requirement: 'VS Code 1.95+', asset: v => `tpm-azure-assist-${v}.vsix` },
   TPMMongoDB: { kind: 'VSIX', description: 'MongoDB 連線與文件查詢工具', requirement: 'VS Code 1.95+', asset: v => `tpmmongodb-${v}.vsix` },
   TPMRedis: { kind: 'VSIX', description: 'Redis 連線與資料瀏覽工具', requirement: 'VS Code 1.95+', asset: v => `tpmredis-${v}.vsix` },
   TPMAzureAssistCLI: { kind: 'CLI', description: 'Azure DevOps 命令列工具', requirement: 'macOS ARM64、Node.js 26.5+', asset: v => `tpm-azure-assist-macos-arm64-v${v}` },
